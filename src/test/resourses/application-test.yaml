@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://postgres:5432/testdb_ci}
+    username: ${DB_USER:test_user}
+    password: ${DB_PASSWORD:test_password}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
